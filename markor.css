@@ -88,7 +88,6 @@ ul {
 	font-weight: inherit;
 }
 
-
 #title {
 	border: none;
 	color: #b03a2e;
@@ -112,7 +111,6 @@ h4, h5 {
 	font-family: 'Proza Libre', sans-serif;
 	page-break-after:  avoid;
 }
-
 
 h6 { 
 	font-family: 'Proza Libre', sans-serif;
@@ -152,8 +150,6 @@ blockquote blockquote {
     padding: 0 0 0 1rem;
     box-shadow: none;
 }
-
-
 
 img {
 	width: 80%;
@@ -276,8 +272,12 @@ tbody tr:nth-child(even) {
     color: #b03a2e;
 } 
 
-
-
+.front-matter-container-author { 
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 2rem;
+    font-weight: 700; 
+    color: #b03a2e;
+} 
 
 @media print {
 	html,body {
