@@ -1,3 +1,5 @@
+/* FONTS */
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -30,7 +32,6 @@
   src: url(https://fonts.gstatic.com/s/prozalibre/v5/LYjGdGHgj0k1DIQRyUEyyEoodNr1Wpyy.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 /* latin-ext */
 @font-face {
   font-family: 'Cormorant Garamond';
@@ -47,6 +48,8 @@
   src: url(https://fonts.gstatic.com/s/cormorantgaramond/v10/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+/* STYLES */
 
 html {
 	background: #fffff8; 
@@ -89,37 +92,53 @@ ul {
 }
 
 #title {
-	border: none;
-	color: #b03a2e;
 	font-family: 'Proza Libre', sans-serif;
-    font-size: 3rem;
+	color: #b03a2e;
+    font-size: 2.5rem;
     font-weight: 700;
 	text-align: left;
 }
 
-h1, h2, h3 {
-	text-align: left;
-	color: #b03a2e;
-	border-bottom: none;
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Proza Libre', sans-serif;
+	text-align: left;
+	line-height: 1.2;
+	border: none;
 	page-break-after: avoid;
 }
 
-h4, h5 {
-	text-align: left;
+h1, h2, h3 {
+	color: #b03a2e;
+	font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4, h5, h6 {
 	color: #191919;
-	font-family: 'Proza Libre', sans-serif;
-	page-break-after:  avoid;
+	font-weight: 400;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h5 {
+	font-size: 1rem;
 }
 
 h6 { 
-	font-family: 'Proza Libre', sans-serif;
-	text-align: left;
-	color: #191919;
-	line-height: 1.2;
-	margin: 0 0 0 0;
-	font-size: 1rem;
-	font-weight: 400;
+	font-size: 8rem;
 }
 
 a {
@@ -255,9 +274,11 @@ tbody tr:nth-child(even) {
 	background: #eee8d5;
 }
 
+/* Front Matter */
+
 .front-matter-container { 
     margin-bottom: 1.5em; 
-    border-bottom: 5px solid #b03a2e;
+    border-bottom: 4px solid #b03a2e;
 } 
 
 .front-matter-item { 
@@ -267,17 +288,41 @@ tbody tr:nth-child(even) {
 
 .front-matter-container-title { 
     font-family: 'Proza Libre', sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700; 
     color: #b03a2e;
 } 
 
 .front-matter-container-author { 
     font-family: 'Proza Libre', sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700; 
     color: #b03a2e;
 } 
+
+.front-matter-container-source { 
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300; 
+    color: #b03a2e;
+} 
+
+.front-matter-container-date { 
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #b03a2e;
+} 
+
+.front-matter-container-tags { 
+    font-family: 'Proza Libre', sans-serif;
+    font-size: .8rem;
+    font-weight: 400; 
+    color: #191919;
+    margin: 1rem 0;
+} 
+
+/* Printing */
 
 @media print {
 	html,body {
