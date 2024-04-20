@@ -107,8 +107,6 @@ ul {
 	text-align: left;
 }
 
-
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Proza Libre', sans-serif;
 	text-align: left;
@@ -145,6 +143,7 @@ h4 {
 
 h5 {
 	font-size: 1rem;
+	font-style: italic;
 }
 
 h6 { 
