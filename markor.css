@@ -63,6 +63,8 @@ html {
 body {
 	font-family: 'Lato', sans-serif;
 	font-style: normal;
+	max-width: 50rem;
+	margin: 10px auto;
 	padding: 4px 8px 4px 8px;
 } 
 
@@ -86,6 +88,12 @@ ul {
 	padding-left: 1.5em;
 } 
 
+.header {
+    margin-bottom: 1.5rem; 
+    padding-bottom: 1rem;
+    border-bottom: 4px solid #b03a2e;
+}
+
 .header_no_underline { 
 	color:  inherit;
 	font-weight: inherit;
@@ -98,6 +106,8 @@ ul {
     font-weight: 700;
 	text-align: left;
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Proza Libre', sans-serif;
@@ -279,11 +289,11 @@ tbody tr:nth-child(even) {
 .front-matter-container { 
     margin-bottom: 1.5em; 
     border-bottom: 4px solid #b03a2e;
-} 
+}
 
 .front-matter-item { 
     text-align: left; 
-    margin-bottom: 0.25em; 
+    margin-bottom: 0.5em; 
 } 
 
 .front-matter-container-title { 
@@ -319,8 +329,60 @@ tbody tr:nth-child(even) {
     font-size: .8rem;
     font-weight: 400; 
     color: #191919;
-    margin: 1rem 0;
+    margin-top: 1rem;
 } 
+
+.subtitle {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 2rem;
+    font-weight: 700; 
+    color: #b03a2e;
+}
+
+.authors {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 2rem;
+    font-weight: 700; 
+    color: #b03a2e;
+}
+
+.affiliation {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700; 
+    color: #b03a2e;
+} 
+
+.affiliation p {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700; 
+    color: #b03a2e;
+} 
+
+.source {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700; 
+    color: #b03a2e;
+}
+
+.date {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1rem;
+    font-weight: 700; 
+    color: #b03a2e;
+}
+
+.tags { 
+    font-family: 'Proza Libre', sans-serif;
+    font-style: italic;
+    font-size: .8rem;
+    font-weight: 400; 
+    color: #191919;
+    margin-top: 1rem;
+}
+
 
 /* Printing */
 
