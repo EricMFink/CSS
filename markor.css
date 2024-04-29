@@ -51,21 +51,16 @@
 
 /* STYLES */
 
-html {
-	background: #fffff8; 
+body {
+	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	color: #191919;
 	line-height: 1.5; 
 	word-wrap:break-word;
-	text-align: left;
-} 
-
-body {
-	font-family: 'Lato', sans-serif;
-	font-style: normal;
-	max-width: 50rem;
-	margin: 10px auto;
-	padding: 4px 8px 4px 8px;
+	max-width: 45rem;
+	margin: auto;
+	padding: .8rem 1rem;
+	background-color: #fffff8; 
 } 
 
 p {
@@ -88,31 +83,13 @@ ul {
 	padding-left: 1.5em;
 } 
 
-.header {
-    margin-bottom: 1.5rem; 
-    padding-bottom: 1rem;
-    border-bottom: 4px solid #b03a2e;
-}
-
-.header_no_underline { 
-	color:  inherit;
-	font-weight: inherit;
-}
-
-#title {
-	font-family: 'Proza Libre', sans-serif;
-	color: #b03a2e;
-    font-size: 2.5rem;
-    font-weight: 700;
-	text-align: left;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Proza Libre', sans-serif;
 	text-align: left;
 	line-height: 1.2;
 	border: none;
 	page-break-after: avoid;
+	margin: 2rem 0 1rem 0;
 }
 
 h1, h2, h3 {
@@ -147,7 +124,7 @@ h5 {
 }
 
 h6 { 
-	font-size: 8rem;
+	font-size: .8rem;
 }
 
 a {
@@ -180,23 +157,28 @@ blockquote blockquote {
 }
 
 img {
-	width: 80%;
+	max-width: 80%;
 	display: block;
 	height: auto;
-	margin: 2rem auto 2rem auto;
+	margin-left: 0;
+	padding-left: 0;
 } 
 
-img[title=right] {
-	width: 40%;
-	float: right;
-	margin-left: 10px;
+.caption {
+	font-size: 1rem;
+	font-style: italic;
 }
 
-img[title=left] {
-	width: 40%;
-	float: left;
-	margin-right: 10px;
-} 
+
+figure {
+	margin: 2rem 0 1rem 0;
+}
+
+figure figcaption {
+	font-size: 1rem;
+	font-style: italic;
+}
+
 
 kbd {
 	padding: 0.1em 0.6em;
@@ -285,6 +267,69 @@ tbody tr:nth-child(even) {
 
 /* Front Matter */
 
+.header {
+    margin-bottom: 1.5rem; 
+    padding-bottom: 1rem;
+    border-bottom: 4px solid #b03a2e;
+}
+
+#title-block-header { 
+    margin-bottom: 1.5em; 
+    border-bottom: 4px solid #b03a2e;
+}
+
+#title {
+	font-family: 'Proza Libre', sans-serif;
+	color: #b03a2e;
+    font-size: 2.5rem;
+    font-weight: 700;
+	text-align: left;
+}
+
+.subtitle {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 2rem;
+    font-weight: 700; 
+    color: #b03a2e;
+}
+
+.author {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 2rem;
+    font-weight: 700; 
+    color: #b03a2e;
+}
+
+.affiliation {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700; 
+    color: #b03a2e;
+}
+
+.date {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1rem;
+    font-weight: 700; 
+    color: #191919;
+}
+
+.source {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700; 
+    color: #191919;
+}
+
+.tags { 
+    font-family: 'Proza Libre', sans-serif;
+    font-style: italic;
+    font-size: .8rem;
+    font-weight: 400; 
+    color: #191919;
+    margin-top: 1rem;
+}
+
 .front-matter-container { 
     margin-bottom: 1.5em; 
     border-bottom: 4px solid #b03a2e;
@@ -330,57 +375,6 @@ tbody tr:nth-child(even) {
     color: #191919;
     margin-top: 1rem;
 } 
-
-.subtitle {
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 2rem;
-    font-weight: 700; 
-    color: #b03a2e;
-}
-
-.authors {
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 2rem;
-    font-weight: 700; 
-    color: #b03a2e;
-}
-
-.affiliation {
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 700; 
-    color: #b03a2e;
-} 
-
-.affiliation p {
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 700; 
-    color: #b03a2e;
-} 
-
-.source {
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 700; 
-    color: #b03a2e;
-}
-
-.date {
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 1rem;
-    font-weight: 700; 
-    color: #b03a2e;
-}
-
-.tags { 
-    font-family: 'Proza Libre', sans-serif;
-    font-style: italic;
-    font-size: .8rem;
-    font-weight: 400; 
-    color: #191919;
-    margin-top: 1rem;
-}
 
 
 /* Printing */
