@@ -48,12 +48,12 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
 	border: none;
 	page-break-after: avoid;
-	margin: 4rem 0 .5rem 0;
 }
 
 h1, h2, h3 {
 	color: #b03a2e;
 	font-weight: 700;
+	margin: 4rem 0 .5rem 0;
 }
 
 h1 {
@@ -71,6 +71,7 @@ h3 {
 h4, h5, h6 {
 	color: #191919;
 	font-weight: 400;
+	margin: 2rem 0 .5rem 0;
 }
 
 h4 {
@@ -232,6 +233,10 @@ tbody tr:nth-child(even) {
     border-bottom: 4px solid #b03a2e;
 }
 
+.header_no_underline { 
+    color: inherit; 
+}
+
 #title-block-header { 
     margin-bottom: 1.5em; 
     border-bottom: 4px solid #b03a2e;
@@ -243,6 +248,7 @@ tbody tr:nth-child(even) {
     font-size: 2.5rem;
     font-weight: 700;
 	text-align: left;
+    margin: 0 0 0.5rem 0; 
 }
 
 .subtitle {
@@ -250,6 +256,7 @@ tbody tr:nth-child(even) {
     font-size: 2rem;
     font-weight: 700; 
     color: #b03a2e;
+    margin: 0.5rem 0; 
 }
 
 .author {
@@ -257,6 +264,7 @@ tbody tr:nth-child(even) {
     font-size: 2rem;
     font-weight: 700; 
     color: #b03a2e;
+    margin: 0.5rem 0; 
 }
 
 .affiliation {
@@ -264,29 +272,49 @@ tbody tr:nth-child(even) {
     font-size: 1.6rem;
     font-weight: 700; 
     color: #b03a2e;
+    margin: 0.5rem 0; 
 }
 
 .date {
     font-family: 'Proza Libre', sans-serif;
     font-size: 1rem;
-    font-weight: 700; 
+    font-weight: 400; 
     color: #191919;
+    margin: 0 0 .5rem 0; 
 }
 
-.source {
+.source { 
     font-family: 'Source Code pro', monospace;
     font-size: .8rem;
     font-weight: 400; 
     color: #191919;
+    margin-bottom: 0.5rem; 
 }
 
 .tags { 
     font-family: 'Proza Libre', sans-serif;
-    font-style: italic;
     font-size: .8rem;
     font-weight: 400; 
     color: #191919;
+    font-style: normal;
     margin-top: 1rem;
+    margin-bottom: 0.5rem; 
+}
+
+.abstract {
+	font-family: 'Lato', sans-serif;
+    font-size: .8rem;
+    font-weight: 400;
+    font-style: italic;
+    margin: 2rem auto 1rem auto;
+}
+
+.abstract h1 {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-style: normal;
+    margin: 2rem auto 1rem auto;
 }
 
 .front-matter-container { 
@@ -306,12 +334,26 @@ tbody tr:nth-child(even) {
     color: #b03a2e;
 } 
 
+.front-matter-container-subtitle {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 2rem;
+    font-weight: 700; 
+    color: #b03a2e;
+}
+
 .front-matter-container-author { 
     font-family: 'Proza Libre', sans-serif;
     font-size: 1.6rem;
     font-weight: 700; 
     color: #b03a2e;
 } 
+
+.front-matter-container-affiliation {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700; 
+    color: #b03a2e;
+}
 
 .front-matter-container-source { 
     font-family: 'Source Code pro', monospace;
@@ -334,7 +376,6 @@ tbody tr:nth-child(even) {
     color: #191919;
     margin-top: 1rem;
 } 
-
 
 /* Printing */
 
