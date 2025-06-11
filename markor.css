@@ -379,6 +379,12 @@ tbody tr:nth-child(even) {
     margin-top: 1rem;
 } 
 
+iframe {
+	aspect-ratio: 16 / 9;
+	height: 100%;
+	width: 100%;
+}
+
 /* Printing */
 
 @media print {
