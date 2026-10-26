@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../cunhapaulo.github.io"
+		}
+	],
+	"settings": {
+		"markdown.marp.themes": [
+			"./themes/marpx.css",
+			"./themes/cantor.css",
+			"./themes/copernicus.css",
+			"./themes/church.css",
+			"./themes/einstein.css",
+			"./themes/frankfurt.css",
+			"./themes/galileo.css",
+			"./themes/gauss.css",
+			"./themes/gödel.css",
+			"./themes/gropius.css",
+			"./themes/haskell.css",
+			"./themes/hobbes.css",
+			"./themes/lorca.css",
+			"./themes/newton.css",
+			"./themes/socrates.css",
+			"./themes/sparta.css",
+			"./themes/temp.css",
+		],
+		"powershell.cwd": "MarpX"
+	}
+}
